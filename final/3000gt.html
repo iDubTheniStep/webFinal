@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" href="img\tab.jpg">
+<link href="theway.css" rel="stylesheet" />
+<title>My Favorite Car</title>
+</head>
+<body>
+<header>
+      <ul>
+
+        <li><a href="bestwork.html">My Best Work</a></li>
+        <li><a href="nextlanguage.html">Learn Next</a></li>
+        <li><a href="3000gt.html">The Best Car In The World</a></li>
+        <li><a href="PCbuild.html">PC Building</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</header>
+
+
+<div class="row">
+  <div class="column">
+    <img src="img\99.jpg" alt="3si.org" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img\1999.jpg" alt="3si.org" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img\sexy.jpg" alt="3si.org" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img\1993.jpg" alt="3si.org" style="width:100%"  onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img\sandstone.jpg" alt="3si.org" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img\mod.jpg" alt="3si.org" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+<center>
+  one of my favorite things in the world is the 3000gt or also known as the dodge stealth <br>
+  I personally own a 1993 3000gt VR-4 in blak <br>
+  as well as a 1993 dodge stealth ES in black  <br>
+</center>
+
+</body>
+</html>
